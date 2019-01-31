@@ -1,0 +1,16 @@
+/* BUTTONS */
+.btn-outline-secondary{
+    background-color: $white;
+}
+.btn-link{
+    color: $white;
+    &:focus{
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: none;
+        color: $white;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}

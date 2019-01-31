@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A propos</title>
+    <!--- NORMALIZE --->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--- BOOTSTRAP ---> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--- BX SLIDER --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!---- GIJGO ----->
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!--- FONT AWESOME --->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--- MAIN CSS --->
+    <link rel="stylesheet" href="css/style.css">
+    <!---- FAVICON --->
+    <link href="favicon.png" rel="shortcut icon" type="image/png" />       
+</head>
+<body>
+    <!-------------HEADER----------->
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                <h1><a href="index.html"><i class="fas fa-map-marked"></i> STULIDAY</a></h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create-article.html">Déposer une annonce</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="profile.html">Profil</a><a href="login.html"><i class="ml-2 fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!------------ BREADCRUMB --------->
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Qui sommes-nous ?</li>
+    </ul>
+
+    <!------------ ABOUT -------------->
+    <section id="about-us">
+        <div class="container">
+            <h2 class="text-center">A propos</h2>
+            <hr></hr>
+            <div id="about-content">
+                <div class="center-vertical shadow-sm">
+                    <div class="col-md-6">
+                        <h2 class="text-center mb-5">Stuliday</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita ullam reiciendis impedit obcaecati, quasi, facere facilis quam possimus quis deserunt alias molestias quos, aperiam fugiat error saepe blanditiis nesciunt!Minima atque at architecto consectetur explicabo non repellendus animi quos culpa corporis odio nam ullam dolor quae facere doloribus sunt reprehenderit, est expedita eum officia? Et totam corporis dolores veniam.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100" src="img/about/about1.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </section>
+
+    <!-------------- EXPLANATIONS ------------------>
+    <section id="explanation">
+        <div class="container">
+            <h2 class="text-center">Comment ça marche ?</h2>
+            <hr class="mb-5"></hr>
+            <div class="tabs shadow-sm">
+                <div class="tab-button-outer">
+                    <ul id="tab-button">
+                        <li><a href="#tab01">Vous êtes voyageur ?</a></li>
+                        <li><a href="#tab02">Vous cherchez des voyageurs ?</a></li>
+                    </ul>
+                </div>
+                <div class="tab-select-outer">
+                    <select id="tab-select">
+                        <option value="#tab01">Vous êtes voyageur ?</option>
+                        <option value="#tab02">Vous cherchez des voyageurs ?</option>
+                    </select>
+                </div>
+
+                <div id="tab01" class="tab-contents">
+                    <div class="row">                
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="mr-2 fas fa-search"></i><span class="text-info">Rechercher</span> un voyage</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                <h5 class="card-title"><i class="mr-2 fas fa-check"></i>Réserver et payer en ligne</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                <h5 class="card-title"><i class="mr-2 fas fa-suitcase"></i>Voyager</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                            </div>   
+                        </div>
+                        <div class="col-md-6">
+                            <img class="w-100"src="img/about/explanation1.jpeg" alt="">
+                        </div>                              
+                    </div>
+                </div><!-- tab01-->
+                <div id="tab02" class="tab-contents">
+                    <div class="row">                
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="mr-2 fas fa-edit"></i><span class="text-info">Publier</span> une annonce</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                <h5 class="card-title"><i class="mr-2 fas fa-check"></i>Vos covoyageurs réservent et paient en ligne</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                <h5 class="card-title"><i class="mr-2 fas fa-suitcase"></i>Voyager</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                            </div>   
+                        </div>
+                        <div class="col-md-6">
+                            <img class="w-100"src="img/about/explanation2.jpeg" alt="">
+                        </div>                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------FOOTER-------------->
+    <footer id="site-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h4>Stuliday</h4>
+                    <p><a href="about.html">Qui sommes-nous ?</a></p>     
+                    <p><a href="legalterms.html">Information légales</a></p>
+                    <p>Stuliday, 2018 © Tous droits réservés.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Liens utiles</h4>
+                    <p>Qui sommes-nous ?</p>
+                    <p>Qui sommes-nous ?</p>
+                    <p>Qui sommes-nous ?</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h4>Contact</h4>
+                    <p><i class="mr-2 fas fa-phone"></i>Tel: +33 X XX XX XX XX</p>
+                    <p><i class="mr-2 fas fa-phone"></i>Tel: +33 X XX XX XX XX</p>
+                    <p><i class="mr-2 fas fa-envelope"></i>contact@stuliday.com</p>
+                </div>
+                <div id="socials" class="col-md-3 mb-3">
+                    <a href="http://facebook.com" target="_blank" class="social-block facebook"><i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="http://twitter.com" target="_blank" class="social-block twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="http://instagram.com" target="_blank" class="social-block instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!---------------SCRIPT--------------------->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- BX Slider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Gijgo -->
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+    <!-- Tab JS -->
+    <script>
+        $(function() {
+            var $tabButtonItem = $('#tab-button li'),
+                $tabSelect = $('#tab-select'),
+                $tabContents = $('.tab-contents'),
+                activeClass = 'is-active';
+
+            $tabButtonItem.first().addClass(activeClass);
+            $tabContents.not(':first').hide();
+
+            $tabButtonItem.find('a').on('click', function(e) {
+                var target = $(this).attr('href');
+
+                $tabButtonItem.removeClass(activeClass);
+                $(this).parent().addClass(activeClass);
+                $tabSelect.val(target);
+                $tabContents.hide();
+                $(target).show();
+                e.preventDefault();
+            });
+
+            $tabSelect.on('change', function() {
+                var target = $(this).val(),
+                    targetSelectNum = $(this).prop('selectedIndex');
+
+                    $tabButtonItem.removeClass(activeClass);
+                    $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+                    $tabContents.hide();
+                    $(target).show();
+                });
+            });
+    </script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

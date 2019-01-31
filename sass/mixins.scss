@@ -1,0 +1,55 @@
+/* MIXINS */
+@mixin center($position) {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    @if $position == 'both' {
+      align-items: center;
+      justify-content: center;
+    }
+    
+    @else if $position == 'vertical' {
+      align-items: center;
+    }
+    
+    @else if $position == 'horizontal' {
+      justify-content: center;
+    }
+
+    @else if $position == 'between' {
+      justify-content: space-between;
+    }
+    
+    @else if $position == 'none' {
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+  }
+  
+  // center both vertical & horizontal
+  .center-both {
+    @include center(both);
+  }
+  
+  // center only vertical
+  .center-vertical {
+    @include center(vertical);
+  }
+    
+  // center only horizontal
+  .center-horizontal {
+    @include center(horizontal);
+  }
+
+  // center only horizontal
+  .center-between {
+    @include center('between');
+  }
+  
+  // Clear both horizontal & vertical
+  .center-none {
+    @include center(none);
+  }
+  

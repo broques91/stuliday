@@ -1,0 +1,32 @@
+/* ARTICLES */
+  /* Accordion with symbols */
+  .accordion {
+  background-color: $white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none !important;
+  font-size: 1.25rem;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #444;
+  font-weight: bold;
+  /*float: right;*/
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.panel {
+  background-color: $white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}

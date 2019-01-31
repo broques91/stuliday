@@ -1,0 +1,47 @@
+/* Annonce */
+#portfolio-annonce{
+    margin-bottom: 40px;
+    h2{margin-bottom: 20px}
+  }
+  #description{
+    margin-bottom: 40px;
+    .col-md-8{
+      border-bottom: 1px solid $borderDark;
+    }
+    
+    h3{
+      margin-bottom: 20px;
+    }
+    .col-md-8 p{
+      margin-bottom:10px;
+    } 
+  }
+  /* Annonce Visiteur */
+  .d-inline-block{
+    width: 100%;
+  }
+  
+  #services{
+    margin-bottom:10px;
+    .grid-service {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px;
+      grid-template-rows: 30px 30px;
+      grid-gap: 1rem;
+    }
+  }
+  
+  #eventMap{
+    .map-annonce{
+      width: 100%;
+      height: 250px;
+    }
+  }
+  .describe-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0
+  }
+  
+  
+  

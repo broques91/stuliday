@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nos annonces</title>
+    <!--- NORMALIZE --->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--- BOOTSTRAP --->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--- BX SLIDER --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!--- LightGallery --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+    <!---- GIJGO ----->
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+    <!--- FONT AWESOME --->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--- MAIN CSS --->
+    <link rel="stylesheet" href="css/style.css">
+    <!---- FAVICON --->
+    <link href="favicon.png" rel="shortcut icon" type="image/png"/>
+</head>
+<body>
+    <!-------------HEADER----------->
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                <h1><a href="index.html"><i class="fas fa-map-marked"></i> STULIDAY</a></h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Nos annonces</a></li>
+                    <li><a href="create-article.html">Déposer une annonce</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="profile.html">Profil</a><a href="login.html"><i class="ml-2 fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!------------- BREACRUMB -------------->
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Nos annonces</li>
+    </ul>
+    <!-------------PAGE CONTENT -------------->
+    <div class="container">
+            <div class="row">
+                <!---------------ASIDE ------------------>
+                <aside class ="col-12 col-md-4 col-lg-3 mb-4">
+                    <h4 class="text-center">Trouvez une annonce</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <input type="text" class="form-control" id="inlineFormInput" placeholder="Que recherchez-vous ?">      
+                            </p>
+                            <p class="card-text">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Toute la France</option>
+                                        <option>Autour de moi</option>
+                                        <option>Europe</option>
+                                        <option>Autres</option>
+                                </select>
+                            </p>
+                            <button type="submit" class="btn btn-info btn-block">Rechercher</button>
+                        </div>
+                    </div>
+                    <button class="accordion text-center">Affiner votre recherche</button>
+                    <div class="panel">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Budget</h5>                 
+                                <p class="card-text">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="priceCheck">
+                                        <label class="form-check-label" for="priceCheck">
+                                            Tous budget
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="priceCheck1">
+                                        <label class="form-check-label" for="priceCheck1">
+                                            0 - 50€
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="priceCheck2">
+                                        <label class="form-check-label" for="priceCheck2">
+                                            50 - 100€
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="priceCheck3">
+                                        <label class="form-check-label" for="priceCheck3">
+                                            100 - 200€
+                                        </label>
+                                    </div>
+                                </p>   
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Participants</h5>                 
+                                <p class="card-text">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="genderCheck1">
+                                        <label class="form-check-label" for="priceCheck1">
+                                            Homme
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="genderCheck2">
+                                        <label class="form-check-label" for="priceCheck2">
+                                            Femme
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="genderCheck3">
+                                        <label class="form-check-label" for="priceCheck3">
+                                            Les deux
+                                        </label>
+                                    </div>
+                                </p>   
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Départ</h5>  
+                                <p class="card-text">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dateCheck1">
+                                        <label class="form-check-label" for="dateCheck1">
+                                            Départ immédiat
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dateCheck2">
+                                        <label class="form-check-label" for="dateCheck2">
+                                            Dans les 7 jours
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dateCheck3">
+                                        <label class="form-check-label" for="dateCheck3">
+                                            Dans les 30 jours
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dateCheck4">
+                                        <label class="form-check-label" for="dateCheck4">
+                                            Avant la fin de l'année
+                                        </label>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Equipements et services</h5>
+                                <p class="card-text">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            WiFi
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                            Climatisation
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                            100% non fumeur
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                            Animaux acceptés
+                                        </label>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>        
+                </aside>
+                <!----------------- ANNONCES ---------------->
+                <div id="listCards" class="col-12 col-md-8 col-lg-9" >
+                    <div class="card col-md-12 mb-3 shadow-sm"> <!-- Annonce #1 -->
+                        <div class="center-vertical">
+                            <div class="col-md-4 p-0">
+                                <img class="w-100" src="img/cards/card1.jpeg">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="center-between">
+                                        <h5 class="card-title">Title</h5>
+                                        <h5 class="card-title">30€</h5>
+                                    </div>
+                                    <small class="text-muted"><i class="fas fa-calendar-alt mb-3"></i> 26/01/2019  -  28/01/2019</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                    <div class="center-between">
+                                        <div>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar1.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar2.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar4.jpeg" width="32"></small>
+                                        </div>
+                                        <div>
+                                            <a class="btn btn-sm btn-info" href="post.html">Voir l'annonce</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /card -->
+                    <div class="card col-md-12 mb-3 shadow-sm"> <!-- Annonce #2 -->
+                        <div class="center-vertical">
+                            <div class="col-md-4 p-0">
+                                <img class="w-100" src="img/cards/card2.jpeg">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="center-between">
+                                        <h5 class="card-title">Title</h5>
+                                        <h5 class="card-title">30€</h5>
+                                    </div>
+                                    <small class="text-muted"><i class="fas fa-calendar-alt mb-3"></i> 26/01/2019  -  28/01/2019</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                    <div class="center-between">
+                                        <div>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar1.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar2.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar4.jpeg" width="32"></small>
+                                        </div>
+                                        <div>
+                                            <a class="btn btn-sm btn-info" href="post.html">Voir l'annonce</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /card -->
+                    <div class="card col-md-12 mb-3 shadow-sm"> <!-- Annonce #3 -->
+                        <div class="center-vertical">
+                            <div class="col-md-4 p-0">
+                                <img class="w-100" src="img/cards/card3.jpeg">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="center-between">
+                                        <h5 class="card-title">Title</h5>
+                                        <h5 class="card-title">30€</h5>
+                                    </div>
+                                    <small class="text-muted"><i class="fas fa-calendar-alt mb-3"></i> 26/01/2019  -  28/01/2019</small>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="center-between">
+                                        <div>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar1.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar2.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar4.jpeg" width="32"></small>
+                                        </div>
+                                        <div>
+                                            <a class="btn btn-sm btn-info" href="post.html">Voir l'annonce</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /card -->
+                    <div class="card col-md-12 mb-3 shadow-sm"> <!-- Annonce #4 -->
+                        <div class="row align-items-center">
+                            <div class="col-md-4 p-0">
+                                <img class="w-100" src="img/cards/card4.jpeg">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="center-between">
+                                        <h5 class="card-title">Title</h5>
+                                        <h5 class="card-title">30€</h5>
+                                    </div>
+                                    <small class="text-muted"><i class="fas fa-calendar-alt mb-3"></i> 26/01/2019  -  28/01/2019</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                    <div class="row justify-content-between">
+                                        <div>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar1.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar2.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar4.jpeg" width="32"></small>
+                                        </div>
+                                        <div>
+                                            <a class="btn btn-sm btn-info" href="post.html">Voir l'annonce</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /card -->
+                    <div class="card col-md-12 mb-3 shadow-sm"> <!-- Annonce #5 -->
+                        <div class="center-vertical">
+                            <div class="col-md-4 p-0">
+                                <img class="w-100" src="img/cards/card5.jpeg">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="center-between">
+                                        <h5 class="card-title">Title</h5>
+                                        <h5 class="card-title">30€</h5>
+                                    </div>
+                                    <small class="text-muted"><i class="fas fa-calendar-alt mb-3"></i> 26/01/2019  -  28/01/2019</small>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis delectus ab doloremque totam.</p>
+                                    <div class="center-between">
+                                        <div>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar1.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar2.jpeg" width="32"></small>
+                                            <small><img class="rounded-circle" src="img/avatar/avatar4.jpeg" width="32"></small>
+                                        </div>
+                                        <div>
+                                            <a class="btn btn-sm btn-info" href="post.html">Voir l'annonce</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /card -->
+                </div><!-- col -->
+            </div><!-- /row -->
+    </div><!-- container -->
+    <!---------------FOOTER-------------->
+    <footer id="site-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Stuliday</h4>
+                    <p><a href="about.html">Qui sommes-nous ?</a></p>     
+                    <p><a href="legalterms.html">Information légales</a></p>
+                    <p>Stuliday, 2018 © Tous droits réservés.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick links</h4>
+                    <p>Qui sommes-nous ?</p>
+                    <p>Qui sommes-nous ?</p>
+                    <p>Qui sommes-nous ?</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact</h4>
+                    <p>Adress</p>
+                    <p>Tel: +33 X XX XX XX XX</p>
+                    <p>contact@stuliday.com</p>
+                </div>
+                <div id="socials" class="col-md-3">
+                    <a href="http://facebook.com" target="_blank" class="social-block facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://twitter.com" target="_blank" class="social-block twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="http://instagram.com" target="_blank" class="social-block instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---------------SCRIPT--------------------->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- BX Slider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- LightGallery -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Gijgo -->
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

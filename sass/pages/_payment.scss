@@ -1,0 +1,8 @@
+/* PAYMENT */
+
+#payment{
+    padding: 60px 0;
+    .active:after{
+        content:"";
+    }
+}

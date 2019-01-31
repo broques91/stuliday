@@ -1,0 +1,89 @@
+/* GENERAL */
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    color: $dark;
+}
+.row{
+  margin:0;
+  padding: 0;
+}
+
+h1{
+    line-height: 60px;
+    color: $white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+h2,
+h3{
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+}
+
+.section-title{
+  text-align: center; 
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: $dark;
+  text-transform: uppercase;
+  margin-bottom:20px;
+}
+
+.border-title{
+  width: 130px;
+  border-top: 3px solid $info;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+.img-thumbnail{
+  width: 250px;
+  margin-right: 10px;
+}
+
+//breadcrumb
+.breadcrumb{
+  width: 100%;
+  margin-bottom: 40px;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: $grey;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: $dark;
+  text-decoration: none;
+}
+
+
+
+
+
+
